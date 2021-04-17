@@ -1,6 +1,113 @@
 @charset "utf-8";
 /* CSS Document */
 
-ul {
+body {
+	background-color: black;
+}
+
+.name {
+	position: fixed;
+	text-align: center;
+	color: white;
+	margin-left: 25px;
+}
+
+.top_banner {
+	margin: 0 auto;
+	width: 80%;
+	height: 400px;
+	background-image: url('../images/banner_image.jpg');
+	background-size: 100%;
+	margin-top: 0;
+}
+
+.headline {
+	opacity: 0.7;
+	font-size: 200px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 80px;
+	font-family: fantasy;
+	letter-spacing: 10px;
+}
+
+.article_area {
+	width: 80%;
+	height: 1000px;
+	background-image: url('../images/article_image.jpg');
+	margin: 0 auto;
+}
+
+.old_norse {
+	font-size: 30px;
+	text-align: center;
+	font-style:italic;
+	font-family:"Palatino Linotype";
+	margin-top: 0;
+	padding-top: 100px;
+}
+
+.korean {
+	font-size: 30px;
+	text-align: center;
+	font-family: "궁서체";
 	line-height: 2;
+}
+
+.bar {
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    background-color: black;
+}
+ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+li {
+    float: left;
+	height:100%; width:25%;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	padding: 50px;
+    text-decoration: none;
+	font-size: 20px;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: orangered;
+}
+
+.map_area {
+	width: 60%;
+	height: 800px;
+	background-image: url('../images/map.jpg');
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin: 100px auto;
+}
+
+.blank {
+	width: 80%;
+	height: 1000px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.blank_text {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 100px;
 }
