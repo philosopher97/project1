@@ -8,9 +8,11 @@ body {
 }
 
 .area {
+	position: relative;
 	width: 1000px;
 	background: white;
 	margin: 0 auto;
+	z-index:2;
 }
 
 .logo {
@@ -345,4 +347,30 @@ a {
 	display: block;
 	cursor: pointer;
 	border-radius: 40px;
+}
+
+
+
+
+.next_episode {
+	position:fixed;
+	top: 35%;
+	right: 100px;
+	z-index: 1;
+}
+
+.next_episode img {
+	width: 200px;
+}
+
+
+.previous_episode {
+	position:fixed;
+	top: 35%;
+	left: 100px;
+	z-index: 1;
+}
+
+.previous_episode img {
+	width: 200px;
 }
